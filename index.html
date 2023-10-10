@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="h-screen w-screen" style="background: rgb(33,26,41); background: linear-gradient(180deg, rgba(33,26,41,1) 41%, rgba(47,36,57,1) 92%); ">
+
+  <div style="background-image: url('./images/bg-stars.svg');" id="container" class="h-full relative">
+    
+    <div class="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+      <div class="text-white uppercase font-bold text-2xl text-center pb-24">We're launching soon</div>
+
+      <div class="flex flex-row gap-12">
+        <div id="card-container" class="flex flex-col gap-2">
+          <div id="days" class="relative flex flex-col">
+            <div id="top" class="bg-gray-blue w-36 h-20 rounded-t-lg"></div>
+            <div id="number" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-soft-red text-[4.5rem]">8</div>
+            <div id="bottom" class="bg-desat-blue w-36 h-20 rounded-b-lg"></div>
+          </div>
+          <div class="text-xl text-center text-white uppercase">Days</div>
+        </div>
+        <div id="card-container" class="flex flex-col gap-2">
+          <div id="days" class="relative flex flex-col">
+            <div id="top" class="bg-gray-blue w-36 h-20 rounded-t-lg"></div>
+            <div id="number" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-soft-red text-[4.5rem]">8</div>
+            <div id="bottom" class="bg-desat-blue w-36 h-20 rounded-b-lg"></div>
+          </div>
+          <div class="text-xl text-center text-white uppercase">Hours</div>
+        </div>
+        <div id="card-container" class="flex flex-col gap-2">
+          <div id="days" class="relative flex flex-col">
+            <div id="top" class="bg-gray-blue w-36 h-20 rounded-t-lg"></div>
+            <div id="number" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-soft-red text-[4.5rem]">8</div>
+            <div id="bottom" class="bg-desat-blue w-36 h-20 rounded-b-lg"></div>
+          </div>
+          <div class="text-xl text-center text-white uppercase">Minutes</div>
+        </div>
+        <div id="card-container" class="flex flex-col gap-2">
+          <div id="days" class="relative flex flex-col">
+            <div id="top" class="bg-gray-blue w-36 h-20 rounded-t-lg"></div>
+            <div id="number" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-soft-red text-[4.5rem]">8</div>
+            <div id="bottom" class="bg-desat-blue w-36 h-20 rounded-b-lg"></div>
+          </div>
+          <div class="text-xl text-center text-white uppercase">Seconds</div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+    <div style="background-image: url(./images/pattern-hills.svg); background-repeat: no-repeat; background-size: cover;" class="w-screen absolute bottom-0 h-60"></div>
+  </div>
+</body>
+</html>
