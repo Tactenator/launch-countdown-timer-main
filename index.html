@@ -14,45 +14,53 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="h-screen w-screen" style="background: rgb(33,26,41); background: linear-gradient(180deg, rgba(33,26,41,1) 41%, rgba(47,36,57,1) 92%); ">
+<body class="h-screen w-screen font-red-hat" style="background: rgb(33,26,41); background: linear-gradient(180deg, rgba(33,26,41,1) 41%, rgba(47,36,57,1) 92%); ">
 
   <div style="background-image: url('./images/bg-stars.svg');" id="container" class="h-full relative">
     
     <div class="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
-      <div class="text-white uppercase font-bold text-2xl text-center pb-24">We're launching soon</div>
+      <div class="text-white uppercase font-bold text-2xl text-center pb-24 tracking-[0.4rem]">We're launching soon</div>
 
       <div class="flex flex-row gap-12">
-        <div id="card-container" class="flex flex-col gap-2">
-          <div id="days" class="relative flex flex-col">
-            <div id="top" class="bg-gray-blue w-36 h-20 rounded-t-lg"></div>
-            <div id="number" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-soft-red text-[4.5rem]">8</div>
-            <div id="bottom" class="bg-desat-blue w-36 h-20 rounded-b-lg"></div>
+        <div id="card-container" class="flex flex-col gap-5">
+          <div id="days-container" class="relative flex flex-col">
+            <div id="top" class="bg-gray-blue w-44 h-20 rounded-t-lg border-b-2 border-dark-blue"></div>
+            <div id="days" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[55%] text-soft-red text-[4.5rem] font-bold">8</div>
+            <div id="bottom" class="bg-desat-blue w-44 h-20 rounded-b-lg"></div>
+            <div id="left-circle" class="absolute left-0 top-1/2 w-2 h-3 rounded-r-lg bg-black -translate-y-1/2"></div>
+            <div id="right-circle" class="absolute right-0 top-1/2 w-2 h-3 rounded-l-lg bg-black -translate-y-1/2"></div>
           </div>
-          <div class="text-xl text-center text-white uppercase">Days</div>
+          <div class="text-base text-center text-white uppercase tracking-[0.4rem]">Days</div>
         </div>
-        <div id="card-container" class="flex flex-col gap-2">
-          <div id="days" class="relative flex flex-col">
-            <div id="top" class="bg-gray-blue w-36 h-20 rounded-t-lg"></div>
-            <div id="number" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-soft-red text-[4.5rem]">8</div>
-            <div id="bottom" class="bg-desat-blue w-36 h-20 rounded-b-lg"></div>
+        <div id="card-container" class="flex flex-col gap-5">
+          <div id="hours-container" class="relative flex flex-col">
+            <div id="top" class="bg-gray-blue w-44 h-20 rounded-t-lg border-b-2 border-dark-blue"></div>
+            <div id="hours" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[55%] text-soft-red text-[4.5rem] font-bold">8</div>
+            <div id="bottom" class="bg-desat-blue w-44 h-20 rounded-b-lg"></div>
+            <div id="left-circle" class="absolute left-0 top-1/2 w-2 h-3 rounded-r-lg bg-black -translate-y-1/2"></div>
+            <div id="right-circle" class="absolute right-0 top-1/2 w-2 h-3 rounded-l-lg bg-black -translate-y-1/2"></div>
           </div>
-          <div class="text-xl text-center text-white uppercase">Hours</div>
+          <div class="text-base text-center text-white uppercase tracking-[0.4rem]">Hours</div>
         </div>
-        <div id="card-container" class="flex flex-col gap-2">
-          <div id="days" class="relative flex flex-col">
-            <div id="top" class="bg-gray-blue w-36 h-20 rounded-t-lg"></div>
-            <div id="number" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-soft-red text-[4.5rem]">8</div>
-            <div id="bottom" class="bg-desat-blue w-36 h-20 rounded-b-lg"></div>
+        <div id="card-container" class="flex flex-col gap-5">
+          <div id="minutes-container" class="relative flex flex-col">
+            <div id="top" class="bg-gray-blue w-44 h-20 rounded-t-lg border-b-2 border-dark-blue"></div>
+            <div id="minutes" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[55%] text-soft-red text-[4.5rem]  font-bold">8</div>
+            <div id="bottom" class="bg-desat-blue w-44 h-20 rounded-b-lg"></div>
+            <div id="left-circle" class="absolute left-0 top-1/2 w-2 h-3 rounded-r-lg bg-black -translate-y-1/2"></div>
+            <div id="right-circle" class="absolute right-0 top-1/2 w-2 h-3 rounded-l-lg bg-black -translate-y-1/2"></div>
           </div>
-          <div class="text-xl text-center text-white uppercase">Minutes</div>
+          <div class="text-base text-center text-white uppercase tracking-[0.4rem]">Minutes</div>
         </div>
-        <div id="card-container" class="flex flex-col gap-2">
-          <div id="days" class="relative flex flex-col">
-            <div id="top" class="bg-gray-blue w-36 h-20 rounded-t-lg"></div>
-            <div id="number" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-soft-red text-[4.5rem]">8</div>
-            <div id="bottom" class="bg-desat-blue w-36 h-20 rounded-b-lg"></div>
+        <div id="card-container" class="flex flex-col gap-5">
+          <div id="seconds-container" class="relative flex flex-col">
+            <div id="top" class="bg-gray-blue w-44 h-20 rounded-t-lg border-b-2 border-dark-blue"></div>
+            <div id="seconds" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[55%] text-soft-red text-[4.5rem] font-bold">8</div>
+            <div id="bottom" class="bg-desat-blue w-44 h-20 rounded-b-lg"></div>
+            <div id="left-circle" class="absolute left-0 top-1/2 w-2 h-3 rounded-r-lg bg-black -translate-y-1/2"></div>
+            <div id="right-circle" class="absolute right-0 top-1/2 w-2 h-3 rounded-l-lg bg-black -translate-y-1/2"></div>
           </div>
-          <div class="text-xl text-center text-white uppercase">Seconds</div>
+          <div class="text-base text-center text-white uppercase tracking-[0.4rem] ">Seconds</div>
         </div>
         
       </div>
@@ -61,5 +69,30 @@
 
     <div style="background-image: url(./images/pattern-hills.svg); background-repeat: no-repeat; background-size: cover;" class="w-screen absolute bottom-0 h-60"></div>
   </div>
+  <script>
+    const daysDiv = document.getElementById('days')
+    const hoursDiv = document.getElementById('hours')
+    const minutesDiv = document.getElementById('minutes')
+    const secondsDiv = document.getElementById('seconds')
+
+    const date = new Date("July 19, 2024 12:00:00").getTime(); 
+
+    const interval = setInterval(function () {
+
+      let now = new Date().getTime()
+
+      let distance = date - now; 
+
+      let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      daysDiv.innerHTML = days; 
+      hoursDiv.innerHTML = hours; 
+      minutesDiv.innerHTML = minutes; 
+      secondsDiv.innerHTML = seconds; 
+    })
+  </script>
 </body>
 </html>
