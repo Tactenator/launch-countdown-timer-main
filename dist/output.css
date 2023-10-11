@@ -776,6 +776,10 @@ video {
   fill: #8385A9;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -905,6 +909,10 @@ video {
 
   .sm\:gap-12 {
     gap: 3rem;
+  }
+
+  .sm\:p-0 {
+    padding: 0px;
   }
 
   .sm\:text-2xl {
