@@ -668,12 +668,24 @@ video {
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .gap-12 {
   gap: 3rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .rounded-b-lg {
@@ -772,4 +784,26 @@ video {
   font-family: "red-hat";
 
   src: url('../fonts/RedHatText-Bold.ttf')
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-soft-red:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(345 95% 68% / var(--tw-bg-opacity));
+}
+
+.hover\:fill-soft-red:hover {
+  fill: hsl(345, 95%, 68%);
+}
+
+.hover\:fill-dark-blue:hover {
+  fill: hsl(235, 16%, 14%);
+}
+
+.hover\:text-soft-red:hover {
+  --tw-text-opacity: 1;
+  color: hsl(345 95% 68% / var(--tw-text-opacity));
 }
